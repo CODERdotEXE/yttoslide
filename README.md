@@ -1,7 +1,7 @@
 # video2pdfslides
 # Description
 This project converts a video presentation into a deck of pdf slides by capturing screenshots of unique frames
-<br> youtube demo: https://www.youtube.com/watch?v=Q0BIPYLoSBs
+
 
 # Setup
 pip install -r requirements.txt
@@ -22,6 +22,3 @@ There are two sample video avilable in "./input", you can test the code using th
 The default parameters works for a typical video presentation. But if the video presentation has lots of animations, the default parametrs won't give a good results, you may notice duplicate/missing slides. Don't worry, you can make it work for any video presentation, even the ones with animations, you just need to fine tune and figure out the right set of parametrs, The 3 most important parameters that I would recommend to get play around is "MIN_PERCENT", "MAX_PERCENT", "FGBG_HISTORY". The description of these variables can be found in code comments.
 
 
-
-# Developer contact info
-kaushik jeyaraman: kaushikjjj@gmail.com
