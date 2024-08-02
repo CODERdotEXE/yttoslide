@@ -14,7 +14,7 @@ This tool extracts distinct frames from a video, saves them as images, and compi
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/video2pdfslides.git
+   git clone https://github.com/CODERdotEXE/video2pdfslides.git
    cd video2pdfslides
    ```
 
