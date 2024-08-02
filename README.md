@@ -1,6 +1,6 @@
-Certainly! Here’s the full Markdown for your `video2pdfslides` README with a modern touch:
 
-```markdown
+
+
 # video2pdfslides
 
 **video2pdfslides** is a Python tool that converts video presentations into PDF slide decks by capturing unique frames as screenshots.
@@ -71,7 +71,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Happy slide creating!
 
-[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/yourusername/video2pdfslides)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/CODERdotEXE/video2pdfslides)
 ```
 
 ### Key Points:
