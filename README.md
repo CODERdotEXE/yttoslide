@@ -1,7 +1,5 @@
 
-
-
-# video2pdfslides
+# <p align="center"><img src="https://via.placeholder.com/1200x300/4a90e2/ffffff?text=video2pdfslides" alt="video2pdfslides Banner" /></p>
 
 **video2pdfslides** is a Python tool that converts video presentations into PDF slide decks by capturing unique frames as screenshots.
 
@@ -69,8 +67,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Happy slide creating!
+<p align="center" style="background: linear-gradient(135deg, #4a90e2, #50e3c2); color: white; padding: 10px 0; font-weight: bold;">
+  Happy slide creating!
+</p>
 
-[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/CODERdotEXE/video2pdfslides)
-
-
+<p align="center">
+  <a href="https://github.com/CODERdotEXE/video2pdfslides">
+    <img src="https://img.shields.io/badge/GitHub-Repository-blue" alt="GitHub Repository"/>
+  </a>
+</p>
