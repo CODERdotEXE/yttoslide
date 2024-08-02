@@ -72,5 +72,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Happy slide creating!
 
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/CODERdotEXE/video2pdfslides)
-```
+
 
