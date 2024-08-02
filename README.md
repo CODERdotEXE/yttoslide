@@ -1,5 +1,5 @@
 
-# <p align="center"><img src="https://via.placeholder.com/1200x300/4a90e2/ffffff?text=video2pdfslides" alt="video2pdfslides Banner" /></p>
+# <p align="center"><img src="video2pdfslides.png" alt="video2pdfslides Banner" /></p>
 
 **video2pdfslides** is a Python tool that converts video presentations into PDF slide decks by capturing unique frames as screenshots.
 
