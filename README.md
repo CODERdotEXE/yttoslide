@@ -1,24 +1,81 @@
+Certainly! Here’s the full Markdown for your `video2pdfslides` README with a modern touch:
+
+```markdown
 # video2pdfslides
-# Description
-This project converts a video presentation into a deck of pdf slides by capturing screenshots of unique frames
 
+**video2pdfslides** is a Python tool that converts video presentations into PDF slide decks by capturing unique frames as screenshots.
 
-# Setup
-pip install -r requirements.txt
+## Overview
 
+This tool extracts distinct frames from a video, saves them as images, and compiles these images into a PDF. It’s designed for creating slide decks from video presentations, ideal for turning recorded talks or tutorials into shareable PDF formats.
 
-# Steps to run the code
-python video2pdfslides.py <video_path>
+## Setup
 
-it will capture screenshots of unique frames and save it output folder...once screenshots are captured the program is paused and the user is asked to manually verify the screenshots and delete any duplicate images. Once this is done the program continues and creates a pdf out of the screenshots.
+1. **Clone the repository:**
 
-# Example
-There are two sample video avilable in "./input", you can test the code using these input by running
-<li>python video2pdfslides.py "./input/Test Video 1.mp4" (4 unique slide)
-<li>python video2pdfslides.py "./input/Test Video 2.mp4" (19 unique slide)
+   ```bash
+   git clone https://github.com/yourusername/video2pdfslides.git
+   cd video2pdfslides
+   ```
 
+2. **Install dependencies:**
 
-# More
-The default parameters works for a typical video presentation. But if the video presentation has lots of animations, the default parametrs won't give a good results, you may notice duplicate/missing slides. Don't worry, you can make it work for any video presentation, even the ones with animations, you just need to fine tune and figure out the right set of parametrs, The 3 most important parameters that I would recommend to get play around is "MIN_PERCENT", "MAX_PERCENT", "FGBG_HISTORY". The description of these variables can be found in code comments.
+   ```bash
+   pip install -r requirements.txt
+   ```
 
+## Usage
 
+1. **Run the script:**
+
+   ```bash
+   python video2pdfslides.py <video_path>
+   ```
+
+   Replace `<video_path>` with the path to your video file. The script will:
+
+   - Capture unique frames from the video.
+   - Save these screenshots in the `output` folder.
+   - Pause for manual verification of screenshots to remove any duplicates.
+   - Continue and generate a PDF from the verified screenshots.
+
+2. **Example Commands:**
+
+   ```bash
+   python video2pdfslides.py "./input/Test Video 1.mp4"  # Produces 4 unique slides
+   python video2pdfslides.py "./input/Test Video 2.mp4"  # Produces 19 unique slides
+   ```
+
+   Note: Sample videos are available in the `./input` directory for testing.
+
+## Customization
+
+The default settings work well for standard video presentations. For videos with extensive animations or unusual content, you might need to adjust parameters to avoid duplicate or missing slides.
+
+**Key Parameters to Tweak:**
+- `MIN_PERCENT`: Minimum threshold for detecting unique frames.
+- `MAX_PERCENT`: Maximum threshold for detecting unique frames.
+- `FGBG_HISTORY`: History parameter for background subtraction.
+
+Adjust these parameters in the code comments to fine-tune results for your specific video.
+
+## Contributing
+
+Feel free to submit issues or pull requests to improve this project. Contributions are always welcome!
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Happy slide creating!
+
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/yourusername/video2pdfslides)
+```
+
+### Key Points:
+- **Repository URL**: Replace `https://github.com/yourusername/video2pdfslides.git` with the actual URL of your repository.
+- **Badge Link**: Update the badge link if you want to use a different image or if you need to change the URL to your repository.
+
+Feel free to modify and expand as needed!
