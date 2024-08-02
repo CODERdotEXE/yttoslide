@@ -74,8 +74,3 @@ Happy slide creating!
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/CODERdotEXE/video2pdfslides)
 ```
 
-### Key Points:
-- **Repository URL**: Replace `https://github.com/yourusername/video2pdfslides.git` with the actual URL of your repository.
-- **Badge Link**: Update the badge link if you want to use a different image or if you need to change the URL to your repository.
-
-Feel free to modify and expand as needed!
