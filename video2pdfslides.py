@@ -56,56 +56,6 @@ def get_frames(video_path):
  
 
 
-# def detect_unique_screenshots(video_path, output_folder_screenshot_path):
-#     ''''''
-#     # Initialize fgbg a Background object with Parameters
-#     # history = The number of frames history that effects the background subtractor
-#     # varThreshold = Threshold on the squared Mahalanobis distance between the pixel and the model to decide whether a pixel is well described by the background model. This parameter does not affect the background update.
-#     # detectShadows = If true, the algorithm will detect shadows and mark them. It decreases the speed a bit, so if you do not need this feature, set the parameter to false.
-
-#     fgbg = cv2.createBackgroundSubtractorMOG2(history=FGBG_HISTORY, varThreshold=VAR_THRESHOLD,detectShadows=DETECT_SHADOWS)
-
-    
-#     captured = False
-#     start_time = time.time()
-#     (W, H) = (None, None)
-
-#     screenshoots_count = 0
-#     for frame_count, frame_time, frame in get_frames(video_path):
-#         orig = frame.copy() # clone the original frame (so we can save it later), 
-#         frame = imutils.resize(frame, width=600) # resize the frame
-#         mask = fgbg.apply(frame) # apply the background subtractor
-
-#         # apply a series of erosions and dilations to eliminate noise
-# #            eroded_mask = cv2.erode(mask, None, iterations=2)
-# #            mask = cv2.dilate(mask, None, iterations=2)
-
-#         # if the width and height are empty, grab the spatial dimensions
-#         if W is None or H is None:
-#             (H, W) = mask.shape[:2]
-
-#         # compute the percentage of the mask that is "foreground"
-#         p_diff = (cv2.countNonZero(mask) / float(W * H)) * 100
-
-#         # if p_diff less than N% then motion has stopped, thus capture the frame
-
-#         if p_diff < MIN_PERCENT and not captured and frame_count > WARMUP:
-#             captured = True
-#             filename = f"{screenshoots_count:03}_{round(frame_time/60, 2)}.png"
-
-#             path = os.path.join(output_folder_screenshot_path, filename)
-#             print("saving {}".format(path))
-#             cv2.imwrite(path, orig)
-#             screenshoots_count += 1
-
-#         # otherwise, either the scene is changing or we're still in warmup
-#         # mode so let's wait until the scene has settled or we're finished
-#         # building the background model
-#         elif captured and p_diff >= MAX_PERCENT:
-#             captured = False
-#     print(f'{screenshoots_count} screenshots Captured!')
-#     print(f'Time taken {time.time()-start_time}s')
-#     return 
 
 def detect_unique_screenshots(video_path, output_folder_screenshot_path):
     fgbg = cv2.createBackgroundSubtractorMOG2(history=FGBG_HISTORY, varThreshold=VAR_THRESHOLD, detectShadows=DETECT_SHADOWS)
